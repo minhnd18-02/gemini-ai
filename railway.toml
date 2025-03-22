@@ -1,0 +1,7 @@
+[build]
+builder = "Dockerfile"
+dockerfilePath = "./Dockerfile"
+
+[deploy]
+startCommand = "dotnet GeminiAI.dll"
+restartPolicyType = "never"

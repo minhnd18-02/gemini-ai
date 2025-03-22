@@ -1,0 +1,38 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Documents\\GeminiAI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE358A3-2CF0-4489-80E8-D3287C64F967}|GeminiAI\\GeminiAI.csproj|d:\\documents\\geminiai\\geminiai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE358A3-2CF0-4489-80E8-D3287C64F967}|GeminiAI\\GeminiAI.csproj|solutionrelative:geminiai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Documents\\GeminiAI\\GeminiAI\\Program.cs",
+              "RelativeDocumentMoniker": "GeminiAI\\Program.cs",
+              "ToolTip": "D:\\Documents\\GeminiAI\\GeminiAI\\Program.cs",
+              "RelativeToolTip": "GeminiAI\\Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAB4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T10:47:19.361Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

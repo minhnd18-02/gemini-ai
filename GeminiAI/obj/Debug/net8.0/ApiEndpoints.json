@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "GenAIWithGemini.Controllers.GeminiAIController",
+    "Method": "CheckText",
+    "RelativePath": "GeminiAI/check-text",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GenAIWithGemini.Model.PromptRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
