@@ -2,6 +2,84 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Mobile.Server/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "5.2.3",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/net46/Microsoft.Azure.Mobile.Server.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/Microsoft.Azure.Mobile.Server.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net46/de/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net46/es/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net46/fr/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net46/it/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net46/ja/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net46/ko/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net46/ru/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net46/zh-Hans/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net46/zh-Hant/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
         "type": "package",
         "build": {
@@ -112,6 +190,57 @@
     }
   },
   "libraries": {
+    "Microsoft.AspNet.WebApi.Client/5.2.3": {
+      "sha512": "3kiI8peSXbXHDDrRuo+QaX0iCEVRe0nvn2dBDRw656uPX32UalbBlSIDUDlJxu05eau4tnuhsikiUuugvvoUoQ==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.client/5.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.Net.Http.Formatting.dll",
+        "lib/net45/System.Net.Http.Formatting.xml",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml",
+        "microsoft.aspnet.webapi.client.5.2.3.nupkg.sha512",
+        "microsoft.aspnet.webapi.client.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Core/5.2.3": {
+      "sha512": "o90QYlRV8VKR1S7+EcJw9w8WSyVFLl+IIzN8ILZ+n2t6rsc/KS8kBxRzA7wCFPRUHhebCfLqilBk39phvanx3g==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.core/5.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/web.config.transform",
+        "lib/net45/System.Web.Http.dll",
+        "lib/net45/System.Web.Http.xml",
+        "microsoft.aspnet.webapi.core.5.2.3.nupkg.sha512",
+        "microsoft.aspnet.webapi.core.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Mobile.Server/2.0.3": {
+      "sha512": "jwkhW2tpxh64t4MtkdjBAoVfRAZulbdrXKBrSAFlHq2WCrnHwCrDUxcKHdwYRpDzKrEiiM1T2xoZdtt8D0sdJw==",
+      "type": "package",
+      "path": "microsoft.azure.mobile.server/2.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net46/Microsoft.Azure.Mobile.Server.dll",
+        "lib/net46/Microsoft.Azure.Mobile.Server.xml",
+        "lib/net46/de/Microsoft.Azure.Mobile.Server.resources.dll",
+        "lib/net46/es/Microsoft.Azure.Mobile.Server.resources.dll",
+        "lib/net46/fr/Microsoft.Azure.Mobile.Server.resources.dll",
+        "lib/net46/it/Microsoft.Azure.Mobile.Server.resources.dll",
+        "lib/net46/ja/Microsoft.Azure.Mobile.Server.resources.dll",
+        "lib/net46/ko/Microsoft.Azure.Mobile.Server.resources.dll",
+        "lib/net46/ru/Microsoft.Azure.Mobile.Server.resources.dll",
+        "lib/net46/zh-Hans/Microsoft.Azure.Mobile.Server.resources.dll",
+        "lib/net46/zh-Hant/Microsoft.Azure.Mobile.Server.resources.dll",
+        "microsoft.azure.mobile.server.2.0.3.nupkg.sha512",
+        "microsoft.azure.mobile.server.nuspec"
+      ]
+    },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "sha512": "Ckb5EDBUNJdFWyajfXzUIMRkhf52fHZOQuuZg/oiu8y7zDCVwD0iHhew6MnThjHmevanpxL3f5ci2TtHQEN6bw==",
       "type": "package",
@@ -573,6 +702,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Microsoft.Azure.Mobile.Server >= 2.0.3",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.21.0",
       "Newtonsoft.Json >= 13.0.3",
       "Swashbuckle.AspNetCore >= 6.6.2"
@@ -628,6 +758,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Microsoft.Azure.Mobile.Server": {
+            "target": "Package",
+            "version": "[2.0.3, )"
+          },
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
             "target": "Package",
             "version": "[1.21.0, )"
@@ -663,5 +797,37 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebApi.Client 5.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebApi.Client",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebApi.Core",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Azure.Mobile.Server 2.0.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Azure.Mobile.Server",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

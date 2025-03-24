@@ -35,3 +35,16 @@ D:\Documents\GeminiAI\GeminiAI\obj\Debug\net8.0\refint\GeminiAI.dll
 D:\Documents\GeminiAI\GeminiAI\obj\Debug\net8.0\GeminiAI.pdb
 D:\Documents\GeminiAI\GeminiAI\obj\Debug\net8.0\GeminiAI.genruntimeconfig.cache
 D:\Documents\GeminiAI\GeminiAI\obj\Debug\net8.0\ref\GeminiAI.dll
+D:\Documents\GeminiAI\GeminiAI\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+D:\Documents\GeminiAI\GeminiAI\bin\Debug\net8.0\System.Web.Http.dll
+D:\Documents\GeminiAI\GeminiAI\bin\Debug\net8.0\Microsoft.Azure.Mobile.Server.dll
+D:\Documents\GeminiAI\GeminiAI\bin\Debug\net8.0\de\Microsoft.Azure.Mobile.Server.resources.dll
+D:\Documents\GeminiAI\GeminiAI\bin\Debug\net8.0\es\Microsoft.Azure.Mobile.Server.resources.dll
+D:\Documents\GeminiAI\GeminiAI\bin\Debug\net8.0\fr\Microsoft.Azure.Mobile.Server.resources.dll
+D:\Documents\GeminiAI\GeminiAI\bin\Debug\net8.0\it\Microsoft.Azure.Mobile.Server.resources.dll
+D:\Documents\GeminiAI\GeminiAI\bin\Debug\net8.0\ja\Microsoft.Azure.Mobile.Server.resources.dll
+D:\Documents\GeminiAI\GeminiAI\bin\Debug\net8.0\ko\Microsoft.Azure.Mobile.Server.resources.dll
+D:\Documents\GeminiAI\GeminiAI\bin\Debug\net8.0\ru\Microsoft.Azure.Mobile.Server.resources.dll
+D:\Documents\GeminiAI\GeminiAI\bin\Debug\net8.0\zh-Hans\Microsoft.Azure.Mobile.Server.resources.dll
+D:\Documents\GeminiAI\GeminiAI\bin\Debug\net8.0\zh-Hant\Microsoft.Azure.Mobile.Server.resources.dll
+D:\Documents\GeminiAI\GeminiAI\obj\Debug\net8.0\GeminiAI.sourcelink.json

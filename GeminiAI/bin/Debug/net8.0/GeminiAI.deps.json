@@ -8,12 +8,76 @@
     ".NETCoreApp,Version=v8.0": {
       "GeminiAI/1.0.0": {
         "dependencies": {
+          "Microsoft.Azure.Mobile.Server": "2.0.3",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.21.0",
           "Newtonsoft.Json": "13.0.3",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
           "GeminiAI.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {
+            "assemblyVersion": "5.2.3.0",
+            "fileVersion": "5.2.30128.0"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3"
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {
+            "assemblyVersion": "5.2.3.0",
+            "fileVersion": "5.2.30128.0"
+          }
+        }
+      },
+      "Microsoft.Azure.Mobile.Server/2.0.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "5.2.3",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net46/Microsoft.Azure.Mobile.Server.dll": {
+            "assemblyVersion": "2.0.3.0",
+            "fileVersion": "2.0.3.0"
+          }
+        },
+        "resources": {
+          "lib/net46/de/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net46/es/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net46/fr/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net46/it/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net46/ja/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net46/ko/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net46/ru/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net46/zh-Hans/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net46/zh-Hant/Microsoft.Azure.Mobile.Server.resources.dll": {
+            "locale": "zh-Hant"
+          }
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
@@ -79,6 +143,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.AspNet.WebApi.Client/5.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3kiI8peSXbXHDDrRuo+QaX0iCEVRe0nvn2dBDRw656uPX32UalbBlSIDUDlJxu05eau4tnuhsikiUuugvvoUoQ==",
+      "path": "microsoft.aspnet.webapi.client/5.2.3",
+      "hashPath": "microsoft.aspnet.webapi.client.5.2.3.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.Core/5.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-o90QYlRV8VKR1S7+EcJw9w8WSyVFLl+IIzN8ILZ+n2t6rsc/KS8kBxRzA7wCFPRUHhebCfLqilBk39phvanx3g==",
+      "path": "microsoft.aspnet.webapi.core/5.2.3",
+      "hashPath": "microsoft.aspnet.webapi.core.5.2.3.nupkg.sha512"
+    },
+    "Microsoft.Azure.Mobile.Server/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jwkhW2tpxh64t4MtkdjBAoVfRAZulbdrXKBrSAFlHq2WCrnHwCrDUxcKHdwYRpDzKrEiiM1T2xoZdtt8D0sdJw==",
+      "path": "microsoft.azure.mobile.server/2.0.3",
+      "hashPath": "microsoft.azure.mobile.server.2.0.3.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",

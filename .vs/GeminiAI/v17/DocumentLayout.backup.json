@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{9DE358A3-2CF0-4489-80E8-D3287C64F967}|GeminiAI\\GeminiAI.csproj|d:\\documents\\geminiai\\geminiai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9DE358A3-2CF0-4489-80E8-D3287C64F967}|GeminiAI\\GeminiAI.csproj|solutionrelative:geminiai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE358A3-2CF0-4489-80E8-D3287C64F967}|GeminiAI\\GeminiAI.csproj|d:\\documents\\geminiai\\geminiai\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9DE358A3-2CF0-4489-80E8-D3287C64F967}|GeminiAI\\GeminiAI.csproj|solutionrelative:geminiai\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE358A3-2CF0-4489-80E8-D3287C64F967}|GeminiAI\\GeminiAI.csproj|d:\\documents\\geminiai\\geminiai\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE358A3-2CF0-4489-80E8-D3287C64F967}|GeminiAI\\GeminiAI.csproj|solutionrelative:geminiai\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,12 +30,38 @@
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Documents\\GeminiAI\\GeminiAI\\Program.cs",
               "RelativeDocumentMoniker": "GeminiAI\\Program.cs",
-              "ToolTip": "D:\\Documents\\GeminiAI\\GeminiAI\\Program.cs",
-              "RelativeToolTip": "GeminiAI\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAcAAAAAAAAAA==",
+              "ToolTip": "D:\\Documents\\GeminiAI\\GeminiAI\\Program.cs*",
+              "RelativeToolTip": "GeminiAI\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T10:47:19.361Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\Documents\\GeminiAI\\GeminiAI\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "GeminiAI\\DependencyInjection.cs",
+              "ToolTip": "D:\\Documents\\GeminiAI\\GeminiAI\\DependencyInjection.cs",
+              "RelativeToolTip": "GeminiAI\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T03:29:29.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Documents\\GeminiAI\\GeminiAI\\appsettings.json",
+              "RelativeDocumentMoniker": "GeminiAI\\appsettings.json",
+              "ToolTip": "D:\\Documents\\GeminiAI\\GeminiAI\\appsettings.json",
+              "RelativeToolTip": "GeminiAI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-24T03:22:55.993Z",
               "EditorCaption": ""
             }
           ]

@@ -1,5 +1,6 @@
 ﻿using GeminiAI;
 using GenAIWithGemini.Client;
+using Microsoft.AspNetCore.DataProtection.KeyManagement;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,8 +8,24 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-string apiKey = "AIzaSyAkXfp4jCNO1OGRShvkwS7oBcVr5Mm8bPI";
-builder.Services.AddSingleton(new GeminiApiClient(apiKey));
+builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+builder.Services.AddApiKeyConfiguration(builder.Configuration);
+
+var apiKey = builder.Configuration["GeminiSettings:ApiKey"];
+
+builder.Services.AddSingleton<GeminiApiClient>(provider =>
+{
+    var config = provider.GetRequiredService<IConfiguration>();
+    var apiKey = config["GeminiSettings:ApiKey"];
+
+    if (string.IsNullOrWhiteSpace(apiKey))
+    {
+        throw new InvalidOperationException("API Key for Gemini is missing in appsettings.json!");
+    }
+
+    return new GeminiApiClient(apiKey);
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -31,8 +48,6 @@ var app = builder.Build();
 #region
 var port = Environment.GetEnvironmentVariable("PORT") ?? "8081";
 builder.WebHost.UseUrls($"http://*:{port}");
-
-//var app = builder.Build();
 
 //Get swagger.json following root directory 
 app.UseSwagger(options => { options.RouteTemplate = "{documentName}/swagger.json"; });
