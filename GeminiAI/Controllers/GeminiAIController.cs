@@ -20,7 +20,24 @@ namespace GenAIWithGemini.Controllers
         {
             try
             {
-                string safetyCheckPrompt = "Nội dung sau có chứa thông tin nhạy cảm hay không, nếu nhạy cảm thì trả lời là có còn không nhạy cảm thì trả lời là không:";
+                string safetyCheckPrompt = "Nội dung sau có chứa thông tin hoặc từ nhạy cảm hay không, nếu có thông tin hoặc từ nhạy cảm thì trả lời là có còn không nhạy cảm thì trả lời là không:";
+                string finalPrompt = safetyCheckPrompt + request.Prompt;
+
+                string response = await _geminiApiClient.CheckTextAsync(finalPrompt);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+        [HttpPost("find-text-error")]
+        public async Task<IActionResult> FindTextError([FromBody] PromptRequest request)
+        {
+            try
+            {
+                string safetyCheckPrompt = "Nội dung sau có chứa thông tin hoặc từ ngữ nhạy cảm hay không, nếu có thông tin hoặc từ ngữ nhạy cảm thì hãy liệt kê ra những chữ đó và không cần giải thích gì hết:  ";
                 string finalPrompt = safetyCheckPrompt + request.Prompt;
 
                 string response = await _geminiApiClient.CheckTextAsync(finalPrompt);

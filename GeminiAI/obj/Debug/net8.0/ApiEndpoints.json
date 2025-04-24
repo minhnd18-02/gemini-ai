@@ -14,5 +14,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GenAIWithGemini.Controllers.GeminiAIController",
+    "Method": "FindTextError",
+    "RelativePath": "GeminiAI/find-text-error",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GenAIWithGemini.Model.PromptRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
