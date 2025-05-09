@@ -1,6 +1,8 @@
 ﻿using GenAIWithGemini.Client;
 using GenAIWithGemini.Model;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.RegularExpressions;
+using System.Web;
 
 namespace GenAIWithGemini.Controllers
 {
@@ -37,6 +39,11 @@ namespace GenAIWithGemini.Controllers
         {
             try
             {
+
+                string decodedPrompt = HttpUtility.UrlDecode(request.Prompt);
+
+                string plainText = Regex.Replace(decodedPrompt, "<.*?>", string.Empty);
+
                 string safetyCheckPrompt = "Nội dung sau có chứa thông tin hoặc từ ngữ nhạy cảm hay không, nếu có thông tin hoặc từ ngữ nhạy cảm thì hãy liệt kê ra những chữ đó và không cần giải thích gì hết:  ";
                 string finalPrompt = safetyCheckPrompt + request.Prompt;
 
